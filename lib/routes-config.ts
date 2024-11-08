@@ -41,7 +41,10 @@ export const ROUTES: EachRoute[] = [
         href: "/customize",
       },
     ],
-  },
+  },{
+    title: "Flutter",
+    href: "/flutter",
+  }
 ];
 
 type Page = { title: string; href: string };
