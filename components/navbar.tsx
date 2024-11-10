@@ -1,33 +1,37 @@
 import { ModeToggle } from "@/components/theme-toggle";
-import { GithubIcon, TwitterIcon, CommandIcon } from "lucide-react";
+import { SheetClose } from "@/components/ui/sheet";
+import { page_routes } from "@/lib/routes-config";
+import { CommandIcon, GithubIcon, TwitterIcon } from "lucide-react";
 import Link from "next/link";
-import { buttonVariants } from "./ui/button";
-import Search from "./search";
 import Anchor from "./anchor";
 import { SheetLeftbar } from "./leftbar";
-import { page_routes } from "@/lib/routes-config";
-import { SheetClose } from "@/components/ui/sheet";
+import Search from "./search";
+import { buttonVariants } from "./ui/button";
 
 export const NAVLINKS = [
   {
-    title: "Documentation",
+    title: "Programming languages",
     href: `/docs${page_routes[0].href}`,
   },
   {
-    title: "Blog",
+    title: "Science & Technology",
     href: "/blog",
   },
   {
-    title: "Examples",
+    title: "History",
     href: "#",
   },
   {
-    title: "Guides",
+    title: "Astronomy",
     href: "#",
   },
   {
-    title: "Community",
+    title: "Health",
     href: "https://github.com/nisabmohd/Aria-Docs/discussions",
+  },
+  {
+    title: "World Countries",
+    href: `/docs${page_routes[0].href}`,
   },
 ];
 
